@@ -1,60 +1,31 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Trianglify basic example</title>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:800italic,900italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='css/base.css' rel='stylesheet' type='text/css'>    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/trianglify/0.4.0/trianglify.min.js"></script>
+    <title>dread</title>
     <style>
-    html, body {
-      margin: 0 0;
-      padding: 0 0;
-      text-align: center;
-      font-size: 0;
-    }
-    canvas{
-    	position:relative;
-    }
-    .logo{
-    	margin: 0 0;
-    	position: absolute;
-    	padding: 0 0;    
-    	background-image: url('assets/dread2.svg');
-    }
-
-    #dread{
-    	top: 30%;
-    	left: 20%;
-      	padding: 0 0;    	
-    	position:absolute;
-    	width:500px;
-    }
+	   
     </style>
   </head>
   <body>
-    <img id="dread" src="assets/dread2.svg" class="svg">
- <script src="https://cdnjs.cloudflare.com/ajax/libs/trianglify/0.4.0/trianglify.min.js"></script>
-  <script>
-  // set up the base pattern
-  var pattern = Trianglify({
-    height: window.innerHeight,
-    width: window.innerWidth,
-    cell_size: 15 + Math.random() * 20,
-	x_colors: 'Greys',
-  	y_colors: 'Greys'})
-  // // canvas
-  // document.body.appendChild(pattern.canvas())
-  // svg
-  document.body.appendChild(pattern.svg())
-  // png
-  // var png = document.createElement('img')
-  // png.src = pattern.png()
-  // document.body.appendChild(png)
-  </script>
+	 <h1 id="dread">Dreadnought</h1>
+
+	  <script>
+	  var pattern = Trianglify({
+	    height: window.innerHeight,
+	    width: window.innerWidth,
+	    cell_size: 15 + Math.random() * 20,
+		x_colors: 'Greys',
+	  	y_colors: 'Greys'})
+
+	  document.body.appendChild(pattern.svg())
+	  </script>
+
   </body>
-
-  <div class="logo">s</div>
-
-
 </html>
