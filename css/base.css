@@ -7,9 +7,10 @@ canvas {
 }
 #dread{
 	font-size: 6.854em;
+  letter-spacing:-6.5pt;
 	top: 30%;
 	left: 20%;
-  	padding: 0 0;    	
+  padding: 0 0;    	
 	position:absolute;
 	width:500px;
 }
